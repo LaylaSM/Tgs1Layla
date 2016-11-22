@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="intermediate.tugas2.secondapp.Linear">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/lay" />
+
+        <EditText
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/image1"
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Username" />
+
+        <EditText
+            android:layout_below="@+id/user"
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Password" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Login"
+        android:layout_below="@+id/pass"
+        android:layout_alignRight="@+id/imgBtn2"
+        android:layout_alignEnd="@+id/imgBtn2" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:layout_toRightOf="@+id/login"
+        android:text="Register"/>
+
+
+    <ImageView
+        android:foregroundGravity="center"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebook"
+        android:id="@+id/imgBtn2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/image1"
+        android:layout_alignStart="@+id/image1" />
+
+    <ImageView
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/t"
+        android:id="@+id/imgBtn1"
+        android:layout_alignTop="@+id/imgBtn2"
+        android:layout_alignRight="@+id/image1"
+        android:layout_alignEnd="@+id/image1" />
+
+</RelativeLayout>
